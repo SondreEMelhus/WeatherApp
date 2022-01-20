@@ -1,0 +1,237 @@
+@font-face {
+  font-family: sanchev;
+  src: url('./componentes/resources/fonts/Sanchez/Sanchez-Regular.ttf');
+}
+@font-face {
+  font-family: dosis;
+  src: url('./componentes//resources//fonts/Dosis/Dosis-VariableFont_wght.ttf')
+}
+
+.App {
+  height: auto;
+  width: auto; 
+  
+  align-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  font-family: dosis;
+  color: #282D30;
+  background-color: #FBF6F0;
+}
+
+
+  /*
+  CLASS SELECTOR: LOGO
+  */
+  .logo {
+  height:500px;
+  width:500px;
+  margin-top: 25px;
+  margin-bottom: 25x;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: logo-hover infinite 30s linear;
+    }
+  }
+  
+  @keyframes logo-hover {
+    from { 	transform: rotate(0deg) translateX(25px) rotate(0deg); }
+    to   {  transform: rotate(360deg) translateX(25px) rotate(-360deg); }
+  }
+
+
+  /*
+  CLASS SELECTOR: TITLE
+  */
+  .title {
+  color: inherit;
+  background-color: #FDFBF8;
+  border: 9px solid #282D30;
+
+  height: 25%;
+  width: 25%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 30px;
+  padding: 40px;
+  margin-bottom:100px;
+  font-weight: bold;
+  }
+
+
+  /*
+  CLASS SELECTOR: ICONS
+  */
+  .icons {
+  height: 20vmin;
+  pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+  icons {
+    animation: App-icons-hover infinite 20s linear;
+   }
+  }
+
+  @keyframes icons-hover {
+    from { 	transform: rotate(0deg) translateX(5px) rotate(0deg); }
+	  to   {  transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+  }
+
+  /*
+  CLASS SELECTOR: ERROR MESSAGE
+  */
+  .errorMessage {
+    color: #ff9966;
+  }
+
+
+  /*
+  CLASS SELECTOR: WEATHERCOMP-COLLAPSED
+  */
+  .weatherComp-collapsed {
+    color: inherit ;
+    background-color: #FDFBF8;
+    
+    border: 6px solid #282D30; 
+    border-radius: 30px;
+    
+    width: 20%;
+    height: 225px;
+    padding: 5px;
+    padding-bottom: 20px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    min-height: 10vh;
+    min-width: 10vh;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font: bold;
+  }
+
+
+  /*
+  CLASS SELECTOR: WEATHERCOMP-COLLAPSED-CLOSEDBTN
+  */
+  .weatherComp-collapsed-closeBtn {
+    border: 2px solid transparent; 
+    border-radius: 20px;
+
+    background-color: #FDFBF8;
+
+    height: 10;
+    width: 10;
+
+    margin-left: 85%;
+  }
+
+
+  /*
+  CLASS SELECTOR: WEATHERCOMP-EXPANDED
+  */
+  .weatherComp-expanded {
+    color: #FDFBF8;
+    background-color: #8b98a5;
+    
+    border: 6px solid #282D30; 
+    border-radius: 30px;
+    
+    width: 65%;
+    height: 225px;
+    padding: 5px;
+    padding-bottom: 20px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    min-height: 10vh;
+    min-width: 10vh;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font: bold;
+  }
+
+
+  /*
+  CLASS SELECTOR: WEATHERCOMP-EXPANDED-CLOSEDBTN
+  */
+  .weatherComp-expanded-closeBtn {
+    border: 2px solid transparent; 
+    border-radius: 20px;
+
+    background-color: #8b98a5;
+
+    height: 10;
+    width: 10;
+
+    margin-left: 90%;
+  }
+
+  .searchbar{
+    display: grid;
+    place-items: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: #FDFBF8;
+
+
+    height: 50%;
+    width: 40%; 
+    position: relative;
+
+    padding-bottom: 100px;
+    background-color: transparent;
+     -webkit-background-clip: padding-box; 
+    -moz-background-clip:    padding; 
+    background-clip:         padding-box;;
+ }
+
+ input {
+  font-family: inherit;
+  font-size: inherit;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  height: inherit;
+  width: inherit; 
+
+  text-align: center;
+
+  overflow-wrap: break-word;
+  border: 2px solid #282D30;
+  position: absolute;
+  border-radius: 50px;
+  word-wrap: break-word;
+}
+
+
+  /*
+  TYPE SELECTOR: LINK
+  */
+  link {
+    color: #61dafb;
+  }
